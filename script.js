@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Requisito: Cargar fuente XML (usando RSS2JSON como proxy para convertir ATOM/RSS a JSON)
   const newsContainer = document.getElementById("news-container");
-  const feedUrl = "https://feeds.bbci.co.uk/news/rss.xml";
+  const feedUrl = "https://rss.nytimes.com/services/xml/rss/nyt/World.xml";
   const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(
     feedUrl
   )}`;
